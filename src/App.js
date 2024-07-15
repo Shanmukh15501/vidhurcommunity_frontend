@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Home from './Home'; // Assuming this is where your Home component is imported
+import Logo from './images/logo'; // Assuming this is the path to your logo image
+import Login from './Login';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <div className="App bg-primary">
+        <Home />
+    </div>
+    <div className="container">
+         <div className="row">
+              <div className="col">
+                  <Logo/>
+              </div>
+              <div className="col">
+                  <Login/>
+              </div>
+              </div>
+    </div>
+
     </div>
   );
 }
